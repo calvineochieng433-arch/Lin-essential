@@ -1923,3 +1923,25 @@
     height: 32px;
   }
 }
+
+@media (hover: none) and (pointer: coarse) {
+  .nav-section:hover {
+    height: 80px;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .lins-logo {
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  .lins-logo img {
+    height: 32px;
+    width: auto;
+    display: block;
+  }
+}
