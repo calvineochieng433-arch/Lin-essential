@@ -125,7 +125,7 @@ export default function MegaMenu() {
             <button onClick={() => setMobileOpen(false)}>✕</button>
 
             <img
-              src="./public/favicon_io/logo.png"
+              src="./favicon_io/logo.png"
               alt="Logo"
               className="mobile-logo"
             />
