@@ -45,7 +45,7 @@ export default function CTA() {
       {/* CTA button with arrow animation */}
       <div className="cta-btn">
         <a href="#cta-btn" ref={btnRef} className="cta-btn-link">
-          <span className="btn-text">→ Drop your email for $15</span>
+          <span className="btn-text">Drop your email for $15</span>
           <span className="btn-hover-text">Claim Your $15 Credit →</span>
         </a>
       </div>

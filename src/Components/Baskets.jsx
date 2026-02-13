@@ -40,7 +40,7 @@ export default function Baskets() {
     Pink: "#E27EB4",
   };
 
-  const [selectedColor, setSelectedColor] = useState("LightBeige");
+  const [selectedColor, setSelectedColor] = useState("CoralRed");
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = basketData[selectedColor] || [];

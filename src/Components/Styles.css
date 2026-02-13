@@ -314,8 +314,6 @@
   }
 }
 
-
-
 .cursor-item {
   position: absolute;
   pointer-events: none;
@@ -628,7 +626,7 @@
 }
 
 .product-card {
-  width: 400px;
+  width: 430px;
   border-radius: 10px;
   overflow: hidden;
   text-align: left;
@@ -658,6 +656,7 @@
   border: none;
   opacity: 0.6;
   font-size: 20px;
+  font-weight: 900;
   padding: 5px 10px;
   border-radius: 50%;
   cursor: pointer;
@@ -1261,7 +1260,7 @@
   z-index: 2;
 }
 
-.first-cta::after {
+/* .first-cta::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1272,7 +1271,7 @@
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-}
+} */
 
 .explore-content {
   position: relative;
@@ -1716,7 +1715,7 @@
 .cart-icon svg {
   width: 24px;
   height: 24px;
-  stroke: #fff;
+  stroke: #080808;
 }
 
 .expanded-area {
@@ -1943,5 +1942,77 @@
     height: 32px;
     width: auto;
     display: block;
+  }
+}
+
+:root {
+  --font-heading: "IM Fell French Canon", serif;
+  --font-body: "Poppins", sans-serif;
+}
+
+.accordion-container {
+  max-width: 700px;
+  margin: 4rem auto;
+  font-family: var(--font-body);
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.accordion-sign {
+  font-size: 1.5rem;
+}
+
+.accordion-answer {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.accordion-answer p {
+  padding: 0 1rem 1rem;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .accordion-container {
+    max-width: 90%;
+    margin: 2rem auto;
+    font-size: 0.95rem;
+    /* smaller overall text */
+  }
+
+  .accordion-question {
+    font-size: 1rem;
+    padding: 0.75rem 0.5rem;
+  }
+
+  .accordion-sign {
+    font-size: 1.2rem;
+  }
+
+  .accordion-answer p {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
   }
 }

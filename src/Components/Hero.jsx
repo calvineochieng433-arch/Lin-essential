@@ -1,6 +1,7 @@
 import "./Styles.css";
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const heroRef = useRef(null);
@@ -107,15 +108,15 @@ export default function Hero() {
         </h1>
 
         <div className="hero-button">
-          <a className="hero-btn1" href="#ShopPoles">
+          <Link to="/ski-poles" className="hero-btn1">
             <span className="btn-text">Shop Poles</span>
             <span className="btn-hover-text">Discover Poles</span>
-          </a>
+          </Link>
 
-          <a className="hero-btn2" href="#ShopApparel">
+          <Link to="/apparel" className="hero-btn2">
             <span className="btn-text">Shop Apparel</span>
             <span className="btn-hover-text">Discover Apparel</span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

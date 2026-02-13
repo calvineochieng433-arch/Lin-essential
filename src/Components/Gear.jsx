@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import "./Styles.css";
+import { Link } from "react-router-dom";
 
 import Cursor from "../UI/Cursor";
 import SkiPoles from "../UI/SkiPoles1";
@@ -19,7 +20,7 @@ export default function Gear() {
         "https://media.yardsale.day/images/8l1z5dyl/production/097b959df33cb3f558a4f466e35c44933f5be08e-980x1458.png?fp-x=0.5380650277557494&fp-y=0.522479954180985&w=768&h=960&fm=webp&q=75&fit=crop&auto=format",
       title: "Ski poles that don't suck",
       subtitle: "Our award-winning magnetic poles for double blacks and bunny slopes.",
-      link: "#SkiPoles",
+      link: "/ski-poles",
       component: SkiPoles,
     },
     {
@@ -28,7 +29,7 @@ export default function Gear() {
       title: "Your new do-it-all bag",
       subtitle:
         "Rugged enough for the mountains, but sleek enough for your daily commute, trips to the beach, and everywhere else you go.",
-      link: "#ShopBags",
+      link: "/backpacks",
       component: Bags,
     },
     {
@@ -36,7 +37,7 @@ export default function Gear() {
         "https://media.yardsale.day/images/8l1z5dyl/production/5143ae6cc774510b4c3c9499004b7f0417820fe4-1024x1536.jpg?rect=0,128,1024,1280&w=768&h=960&fm=webp&q=75&fit=crop&auto=format",
       title: "Apparel that takes you from the mountain to the lodge",
       subtitle: "Cozy merino wool layers for cold days outside",
-      link: "#TechnicalApparel",
+      link: "/apparel",
       component: Apparel,
     },
   ];
@@ -133,9 +134,9 @@ function GearCard({ gear }) {
         <div className="gear-content">
           <h3>{gear.title}</h3>
           <p>{gear.subtitle}</p>
-          <a className="gear-link" href={gear.link}>
+          <Link to={gear.link} className="gear-link">
             Shop now
-          </a>
+          </Link>
         </div>
       </div>
 

@@ -1,35 +1,22 @@
 import "./Styles.css";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import {Link} from "react-router-dom";
 
-export default function Features() {
+export default function Images() {
   const sectionRef = useRef(null);
 
   const features = [
     {
       Image:
-        "https://media.yardsale.day/images/8l1z5dyl/production/2accb0eb0446b4281255dfbfd0ab30a35f8d1e0a-2400x3600.jpg?rect=0,300,2400,3000&w=640&h=800&fm=webp&q=75&fit=crop&auto=format",
-      title: "The Sport Coat",
-      link: "/coats",
+        "https://media.yardsale.day/images/8l1z5dyl/production/b9ce4642b67a251ef58e8f5701bf9be7786b94bb-2000x3000.jpg?rect=0,250,2000,2500&w=640&h=800&fm=webp&q=75&fit=crop&auto=format",
+      title: "Doubleblack™",
+      link: "#Discover",
     },
     {
       Image:
-        "https://media.yardsale.day/images/8l1z5dyl/production/7e4cf3a5b2181644ebdb87b40f3b7dcbf32098e6-2400x3600.jpg?rect=0,300,2400,3000&w=640&h=800&fm=webp&q=75&fit=crop&auto=format",
-      title: "The Dinner Sweater",
-      link: "#Shop",
-    },
-    {
-      Image:
-        "https://media.yardsale.day/images/8l1z5dyl/production/9cb4e7e1de2ab5a2eb6d8c5adcf0990cc78b748c-2400x3600.jpg?w=640&fm=webp&q=75&fit=crop&auto=format",
-      title: "P1 Resort Poles",
-      link: "/ski-poles",
-    },
-    {
-      Image:
-        "https://media.yardsale.day/images/8l1z5dyl/production/5d4cdc5128290b69f9dfb25011025bdfb0356462-1080x1350.png?fp-x=0.5191564234734338&fp-y=0.4886047281047906&w=640&fm=webp&q=75&fit=crop&auto=format",
-      title: "The Day Bag",
-      link: "/backpacks",
+        "https://media.yardsale.day/images/8l1z5dyl/production/696f625b0aee7fb4f48774fbe656a9ab9510974b-2000x3000.jpg?rect=0,250,2000,2500&w=640&h=800&fm=webp&q=75&fit=crop&auto=format",
+      title: "PowderDay™",
+      link: "#Discover",
     },
   ];
 
@@ -101,10 +88,10 @@ export default function Features() {
             <div className="feature-overlay">
               <h3>{feature.title}</h3>
 
-              <Link to={feature.link} className="feature-btn">
+              <span className="feature-btn">
                 <span className="btn-text">Shop</span>
                 <span className="btn-hover-text">Discover</span>
-              </Link>
+              </span>
             </div>
           </a>
         ))}

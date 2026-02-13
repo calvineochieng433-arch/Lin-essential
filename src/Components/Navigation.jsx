@@ -21,7 +21,7 @@ const megaMenuData = [
   },
   {
     title: "Men",
-    links: ["The Sport Coat", "Baselayers", "Sweaters", "Tees, Hats & More"],
+    links: ["The Sport Coat", "Baselayers", "Sweaters", "Accessories"],
     image:
       "https://media.yardsale.day/images/8l1z5dyl/production/c9293e71e2e68a95e358d3cca338de2a1a21f9a3-1021x791.jpg?rect=0,109,1021,574&w=1024&h=576&fm=webp&q=75&fit=crop&auto=format",
     imgTitle: "Men's Collection",
@@ -29,7 +29,7 @@ const megaMenuData = [
   },
   {
     title: "Women",
-    links: ["The Sport Coat", "Baselayers", "Sweaters", "Tees, Hats & More"],
+    links: ["The Sport Coat", "Baselayers", "Sweaters", "Accessories"],
     image:
       "https://media.yardsale.day/images/8l1z5dyl/production/2a4d6bc473ceb7a0c4be02542832b453a4ef83c5-1024x683.jpg?rect=0,54,1024,576&w=1024&h=576&fm=webp&q=75&fit=crop&auto=format",
     imgTitle: "Women's Collection",
